@@ -20,5 +20,6 @@ Input password
 Click on login button
     Wait Until Element Is Enabled       ${login_button}    timeout=30
     Click Element                       ${login_button}
-    Sleep    1s
+    Sleep    3s
+    Press Keys    NONE    ESC
     Wait Until Element Is Enabled       //button[@id='react-burger-menu-btn']    timeout=5
